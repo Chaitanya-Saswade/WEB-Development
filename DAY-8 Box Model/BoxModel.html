@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            background-color: bisque;
+            font-family: fantasy;
+            display: flex;
+            /* By adding "display: flex" products are visible side by side instead ofin Vertical form; */
+        }
+        
+        button {
+            background-color: rgb(252, 206, 0);
+            font-family: 'Times New Roman';
+            border-radius: 5px;
+            color: black;
+            cursor: pointer;
+            /*Cursor-pointer - changes the cusor (mouse) */
+        }
+        
+        .product {
+            border: 3px solid rgb(0, 0, 0);
+            width: 300px;
+            overflow: hidden;
+            text-align: center;
+            border-radius: 15px;
+            padding: 20px;
+            margin: 30px;
+            background-color: rgb(0, 0, 0);
+            color: aliceblue;
+            box-shadow: 0px 4px 10px rgb(187, 119, 119);
+        }
+        
+        .product img {
+            object-fit: cover;
+            border-radius: 20px;
+            width: 300px;
+        }
+        
+        .product:hover {
+            transform: scale(1.03);
+            transition: 1s;
+            background-color: rgb(247, 247, 247);
+            color: black;
+        }
+        
+        .product:hover button {
+            transform: scale(1.10);
+            transition: 1s;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="product"><img src="https://rukminim2.flixcart.com/image/1920/1920/ktketu80/mobile/2/0/r/iphone-13-mlph3hn-a-apple-original-imag6vzzxhggamcz.jpeg?q=90">
+        <p>Apple Iphone 13</p>
+        <p>₹31, 999
+        </p><button>ADD TO CART 🛒</button></div>
+
+    <div class="product"><img src="https://rukminim2.flixcart.com/image/1920/1920/xif0q/bike-exhaust-system/v/x/d/5-6-2024-onlydriftfans-original-imah6byfsdrgaaz9.jpeg?q=90">
+        <p>Valvetronic Exhaist</p>
+        <p>₹29,999</p>
+        <button>ADD TO CART 🛒</button>
+    </div>
+
+    <div class="product">
+        <img src="https://www.marutisuzuki.com/adobe/assets/urn:aaid:aem:7d294b86-db00-4fa3-a515-f9aadf21c259/as/43210M66T10-0CE.png">
+        <p>Brezza OEM Alloys</p>
+        <p>₹36, 999</p>
+        <button>ADD TO CART 🛒</button>
+    </div>
+</body>
+
+</html>
