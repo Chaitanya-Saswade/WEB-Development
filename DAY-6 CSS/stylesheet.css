@@ -1,0 +1,17 @@
+h1 {
+    color: chocolate;
+    background-color: black;
+    text-align: center;
+    border-radius: 10px;
+}
+
+p {
+    color: cornflowerblue;
+    font-family: inherit;
+}
+
+span {
+    color: rgb(26, 168, 50);
+    border-radius: 15px;
+    background-color: black;
+}
