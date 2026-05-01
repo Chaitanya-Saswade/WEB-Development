@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        p {
+            color: red;
+            font-family: cursive;
+        }
+        
+        p.ex1 {
+            display: none;
+            color: orange;
+        }
+        
+        p.ex2 {
+            display: block;
+            color: pink;
+            background-color: black;
+        }
+        
+        p.ex3 {
+            display: Inline;
+            font-family: fantasy;
+            color: burlywood;
+            background-color: beige;
+        }
+        
+        p.ex4 {
+            display: Inline-Block;
+            width: 300px;
+            color: blue;
+            font-family: cursive;
+            background-color: cadetblue;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Display Properties</h1>
+    <hr>
+    <!-- .. -->
+    <h1>Display: None </h1>
+    <div>
+        The Display None means Nothing to Display.
+        <p class="ex1">Hello Display None</p>
+    </div>
+
+    <h1>Display : Block </h1>
+    <div>
+        The Display Block works as a Div Container, Uses 100% width of Page.
+        <p class="ex2">Hello Display Block</p>
+    </div>
+
+    <h1>Display : Inline</h1>
+    <div>
+        The Display Inline works as Same as the Span Tag - Takes only the required amount of width.
+        <p class="ex3">Hello Display Inline</p>
+    </div>
+
+    <h1>Display : Inline-Block</h1>
+    <div>
+        The Display Inline-Block Works as a Combination of the Block and Inline Property.i.eIt will take required amount of length andit can be adjusted also.
+        <p class="ex4">Hello Display Inline-Block</p>
+    </div>
+</body>
+
+</html>

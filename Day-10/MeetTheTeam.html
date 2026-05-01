@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            background-color: rgb(206, 244, 224);
+            font-family: 'Times New Roman', Times, serif;
+            margin: 0px;
+        }
+        
+        h1 {
+            text-align: center;
+            margin-bottom: 90px;
+            font-size: 60px;
+        }
+        
+        .team {
+            display: flex;
+            justify-content: center;
+            gap: 150px;
+            flex-wrap: wrap;
+            /* Flex-Wrap ------Changes the display as per the screen size */
+            /* width: 900px; */
+        }
+        
+        .card {
+            /* display: flex; */
+            background-color: rgb(139, 128, 128);
+            border: 1px solid rgb(106, 131, 155);
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 0px 4px 6px rgb(0, 0, 0);
+        }
+        
+        .card img {
+            height: 200px;
+            width: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Meet Our Awesome Team.</h1>
+
+    <div class="team">
+
+        <div class="card">
+            <img src="https://img.freepik.com/premium-vector/man-avatar-profile-picture-isolated-background-avatar-profile-picture-man_1293239-4841.jpg?semt=ais_hybrid&w=740&q=80">
+            <h2>Om</h2>
+            <p>Backend Developer</p>
+        </div>
+
+        <div class="card">
+            <img src="https://img.freepik.com/premium-vector/young-man-avatar-character-due-avatar-man-vector-icon-cartoon-illustration_1186924-4438.jpg?semt=ais_hybrid&w=740&q=80">
+            <h2>Aishwarya</h2>
+            <p>Frontend Developer</p>
+        </div>
+
+        <div class="card">
+            <img src="https://img.freepik.com/premium-vector/cheerful-asian-boy-with-short-haircut-semi-flat-vector-character-head-editable-cartoon-avatar-icon-face-emotion-colorful-spot-illustration-web-graphic-design-animation_151150-16469.jpg?semt=ais_hybrid&w=740&q=80">
+            <h2>Harish</h2>
+            <p>Data Analyst</p>
+        </div>
+
+        <div class="card">
+            <img src="https://static.vecteezy.com/system/resources/thumbnails/024/183/525/small_2x/avatar-of-a-man-portrait-of-a-young-guy-illustration-of-male-character-in-modern-color-style-vector.jpg">
+            <h2>Manish</h2>
+            <p>Full-Stack Developer</p>
+        </div>
+    </div>
+</body>
+
+</html>

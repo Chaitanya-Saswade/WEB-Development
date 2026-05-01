@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .Flex {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            /* flex-direction: column;   Content Displays In Column Form */
+            background-color: blanchedalmond;
+            height: 500px;
+            /* All this properties can only used after Display: Flex  except bg.color and height*/
+        }
+        
+        .box {
+            border: 1px solid brown;
+            height: 200px;
+            width: 200px;
+            text-align: center;
+            font-family: cursive;
+            background-color: cadetblue;
+            font-style: italic;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Flex Gives Dislay in 1 Dimensional - Either in Row or Column 
+    Bydefualt - Row Wise Display : Side by Side 
+    -->
+    <!-- .. -->
+    <div class="Flex">
+        <div class="box">Cake</div>
+        <div class="box">Pastry</div>
+        <div class="box">Bread</div>
+    </div>
+</body>
+
+</html>
