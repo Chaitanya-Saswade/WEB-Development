@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: lightcyan;
+        }
+        
+        .parent {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+            /* Auto-fit ADJUSTS NO. OF Columns AUTOMATICALLY and
+             "minmax" means minimum and maximum value of the Column  */
+            gap: 45px;
+        }
+        
+        .product {
+            text-align: center;
+            border: 1px solid black;
+            overflow: hidden;
+            /* When content overflows from the div constainer we use overflow hidden
+             for hiding the extra content. */
+            font-size: 45px;
+            border-radius: 10px;
+            box-shadow: 0px 15px 20px black;
+        }
+        
+        .product img {
+            object-fit: cover;
+            height: 500px;
+            width: 100%;
+            border-radius: 24px;
+        }
+        
+        button {
+            margin: 30px;
+            font-size: 30px;
+        }
+        
+        p {
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+
+        <div class="product">
+            <img src="https://m.media-amazon.com/images/I/61fLZTfctXL._SL1280_.jpg">
+            <h2>Foot Pump</h2>
+            <p>₹850</p>
+            <button>Add to  Cart🛒</button>
+        </div>
+
+        <div class="product">
+            <img src="https://m.media-amazon.com/images/I/81x0Hnw-TeL._SL1500_.jpg">
+            <h2>Tyre Polish</h2>
+            <p>₹678</p>
+            <button>Add to  Cart🛒</button>
+        </div>
+
+        <div class="product">
+            <img src="https://m.media-amazon.com/images/I/81ZXxclydBL._SL1500_.jpg">
+            <h2>Sporty Helmet</h2>
+            <p>₹4,575</p>
+            <button>Add to  Cart🛒</button>
+        </div>
+
+        <div class="product">
+            <img src="https://m.media-amazon.com/images/I/81XlIoVdx2L._SY695_.jpg">
+            <h2>Sneakers</h2>
+            <p>₹2,515</p>
+            <button>Add to  Cart🛒</button>
+        </div>
+
+        <div class="product">
+            <img src="https://m.media-amazon.com/images/I/71Y+H+Zdk6L._SL1500_.jpg">
+            <h2>Wooden Table</h2>
+            <p>₹3,199</p>
+            <button>Add to  Cart🛒</button>
+        </div>
+
+        <div class="product">
+            <img src="https://m.media-amazon.com/images/I/51wZUjqIdeL._SL1500_.jpg">
+            <h2>Air Fryer</h2>
+            <p>₹2,499</p>
+            <button>Add to  Cart🛒</button>
+        </div>
+    </div>
+</body>
+
+</html>
