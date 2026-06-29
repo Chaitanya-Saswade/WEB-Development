@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .box {
+            height: 100px;
+            width: 100px;
+            background-color: aqua;
+            animation-name: changecolor;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+        }
+        /*--- Keyframe for one change/changing one color----------------------------------------------- */
+        /* @keyframes changecolor {
+            from {
+                background-color: aqua;
+            }
+            to {
+                background-color: bisque;
+            } */
+        
+        @keyframes changecolor {
+            0% {
+                background-color: aquamarine;
+            }
+            25% {
+                background-color: brown;
+            }
+            50% {
+                background-color: black;
+            }
+            75% {
+                background-color: red;
+            }
+            100% {
+                background-color: yellow;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box"></div>
+
+</body>
+
+<!-- Keyframes Consists of two types- 1.Hover 2.Keyframe -->
+<!-- By adding {Animation-iteration-count} animation will not go to original Condition. -->
+
+</html>
