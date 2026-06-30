@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            background-color: black;
+        }
+        
+        h1 {
+            color: rgb(255, 255, 255);
+            animation: glow 3s infinite alternate;
+        }
+        
+        @keyframes glow {
+            from {
+                text-shadow: 0 0 20px red;
+            }
+            to {
+                text-shadow: 0 0 95px red, 0 0 95px red;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>Neon Text</h1>
+</body>
+
+</html>

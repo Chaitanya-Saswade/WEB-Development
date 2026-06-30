@@ -10,20 +10,23 @@
         .box {
             height: 100px;
             width: 100px;
-            background-color: rgb(231, 231, 0);
+            background-color: rgb(0, 0, 0);
             border-radius: 50%;
-            animation: bounce 2s infinite alternate;
+            animation: opacity 2s infinite ease-in-out;
         }
         
-        @keyframes bounce {
+        @keyframes opacity {
             0% {
-                transform: translateY(0);
+                opacity: 1;
+            }
+            25% {
+                opacity: 0.5;
             }
             50% {
-                transform: translateY(100px);
+                opacity: 0;
             }
             100% {
-                transform: translateY(0);
+                opacity: 1;
             }
         }
     </style>
@@ -32,8 +35,6 @@
 <body>
     <div class="box"></div>
 </body>
-<!-- border-radius: 50%;     IS used to Convert a box into Circle -->
-<!-- Alternate adds delay between 2 animations -->
 <!-- ease-in-out makes the  animation smooth -->
 
 </html>
