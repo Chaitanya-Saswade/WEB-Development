@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            background-color: black;
+        }
+        /*------------------------------------ Task 6 CSS  */
+        
+        .r1 {
+            display: flex;
+            justify-content: center;
+        }
+        
+        .r2 {
+            display: flex;
+            justify-content: center;
+        }
+        
+        .r3 {
+            display: flex;
+            justify-content: center;
+        }
+        
+        .l1 {
+            display: flex;
+            justify-content: center;
+            margin: 2%;
+            height: 100px;
+            width: 100px;
+            color: aqua;
+            background-color: black;
+            border: 5px solid lightgray;
+            text-align: center;
+        }
+        /*------------------------------------ Task 7 CSS  */
+        
+        .G1 {
+            display: grid;
+            grid-template-columns: repeat( 3, 1fr);
+            gap: 20px;
+            justify-content: center;
+        }
+        
+        .block {
+            height: 350px;
+            width: 350px;
+            border: 9px solid white;
+            margin: 20%;
+            border-radius: 20px;
+        }
+        
+        .block:hover {
+            transform: scale(1.1);
+        }
+        
+        img {
+            height: 100%;
+            width: 100%;
+            border-radius: 10px;
+        }
+        /*------------------------------------ Task 9 CSS  */
+        
+        .price {
+            background-color: white;
+            height: 600px;
+            border: 10px solid lightgrey;
+            display: flex;
+            margin: 15px;
+            justify-content: center;
+        }
+        
+        .card {
+            height: 500px;
+            width: 240px;
+            background-color: black;
+            color: goldenrod;
+            margin: 4%;
+            border: 2px solid black;
+            border-radius: 15px;
+            text-align: center;
+        }
+        
+        .card:hover {
+            transform: scale(1.05);
+        }
+        /*------------------------------------ Task 10 CSS  */
+        
+        .staff {
+            background-color: lightcyan;
+            height: 80px;
+            border: 2px solid black;
+            display: flex;
+            text-align: center;
+            padding: 0%;
+            margin: -1%;
+        }
+        
+        .emp {
+            min-height: 0%;
+            color: lightseagreen;
+            margin-left: 15%;
+            object-fit: cover;
+            margin-top: 30px;
+        }
+        
+        .emp:hover {
+            transform: scale(1.05);
+        }
+    </style>
+
+    <body>
+
+        <header>
+
+            <h1 style="color: white;font-weight: bold;text-align: center; background-color: lightseagreen;">This is the Second Page of Exam Task- 6,7,8,9,10.</h1>
+            <hr>
+            <hr>
+        </header>
+
+        <main>
+            <!-- ------------------------------------------------- Task 6 -->
+            <div class="r1">
+                <div class="l1">B1</div>
+                <div class="l1">B2</div>
+            </div>
+            <div class="r2">
+                <div class="l1">B4</div>
+                <div class="l1">B5</div>
+
+            </div>
+            <div class="r3">
+                <div class="l1">B2</div>
+                <div class="l1">B3</div>
+            </div>
+            <br><br>
+            <hr><br>
+
+            <!------------------------------------------------- Task 7   -->
+
+            <div class="G1">
+                <div class="block">
+                    <image src="https://i.pinimg.com/736x/31/55/9b/31559b20a4afde36c9390746c78b5fab.jpg">
+                </div>
+                <div class="block">
+                    <img src="https://i.pinimg.com/736x/9c/b1/a5/9cb1a5e02511be8b7c36bd2952c24bb6.jpg"></div>
+                <div class=" block ">
+                    <img src="https://i.pinimg.com/736x/4b/ed/4b/4bed4bb9070020b3c71d6108124023e3.jpg"></div>
+                <div class=" block "><img src="https://i.pinimg.com/736x/fb/19/53/fb195333362cea75c6e65a00bd0461df.jpg"></div>
+                <div class="block "><img src="https://i.pinimg.com/736x/91/58/30/915830de4538d20406fbda18a24c403e.jpg"></div>
+                <div class="block "><img src="https://i.pinimg.com/1200x/2c/3c/15/2c3c1552e4e5fc07fb5d9ee8be5bf007.jpg"></div>
+            </div>
+            <br><br>
+            <hr>
+            <br><br>
+
+            <!------------------------------------------------- Task 8 -->
+
+            <div style="height: 200px; border: 1px solid white; text-align: center;">
+                <button style="height: 50px; width: 120px; border: 5px solid khaki; background-color: lightblue;font-family: cursive; font-weight: bold; color: green; margin:5%; box-shadow: 0 0 25px white;">GLOW</button>
+            </div>
+
+            <br><br>
+            <hr>
+            <br><br>
+
+            <!------------------------------------------------- Task 9 -->
+
+            <h1 style="background-color: grey; color: yellow;font-family: cursive;text-align: center;">BECOME AN EXCLUSIVE MEMBER!</h1>
+
+            <div class="price">
+                <div class="card">
+                    <h2>₹699/Member</h2><br><br>
+                    <p>»No ADS</p>
+                    <p>»Early Updates</p>
+                    <p>»Reduced Bugs</p>
+                    <button>Pay Now</button>
+                </div>
+
+                <div class="card">
+                    <h2>₹999/Exclusive</h2><br><br>
+                    <p>»No ADS</p>
+                    <p>»Early Updates</p>
+                    <p>»Reduced Bugs</p>
+                    <p>»Exclusive Membership Bonus </p>
+                    <p>»Data Safety</p>
+                    <button>Pay Now</button>
+                </div>
+
+                <div class="card">
+                    <h2>₹1699/Premium</h2><br><br>
+                    <p>»No ADS</p>
+                    <p>»Early Updates</p>
+                    <p>»Reduced Bugs</p>
+                    <p>»Exclusive Membership Bonus </p>
+                    <p>»Data Safety</p>
+                    <p>»Faster Service</p>
+                    <p>»24x7 Support</p>
+                    <p>»MisticAI Access</p>
+                    <p>»Flat 50% OFF on First Order</p>
+                    <button>Pay Now</button>
+                </div>
+            </div>
+
+            <br><br>
+            <hr>
+            <hr>
+            <br><br>
+
+        </main>
+        <!------------------------------------------------- Task 10 -->
+        <footer>
+
+            <div class="staff">
+                <div class="emp">
+                    <button>Careers</button>
+                </div>
+
+                <div class="emp">
+                    <button>Terms of Use</button>
+                </div>
+
+                <div class="emp">
+                    <button>About Us</button>
+                </div>
+
+                <div class="emp">
+                    <button>Support</button>
+                </div>
+            </div>
+
+        </footer>
+
+    </body>
+
+</html>
