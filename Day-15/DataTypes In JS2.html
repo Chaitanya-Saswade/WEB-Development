@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        //Advanced DataTypes / DataTypes 2
+
+        // 1. Arrays
+
+        //Array -To Store the Multiple Data of Different Data Types as Together , at the Same Time
+        //Symbol - [] Square Brackets
+        //Rule - Index position of Array Starts with 0
+
+        var students = ["John", "Bob", "Charlie", true, 123]
+
+        console.log(students)
+
+        //Access the DataTypes ArrayName[Index No.]
+        console.log(students[1])
+        console.log(students[4])
+
+
+
+        // 2.Object
+
+        //Object - Collection of Data
+        //Symbol - { } curly bracket
+        //Rule - (left)key : value(right)
+
+        var employee = {
+
+            // key: value
+            name: "Om",
+            email: "om@gmail.com",
+            id: 11121,
+            working: true
+
+        }
+
+        //Access the value in Object By using - ObjectName.keyname
+        console.log(employee)
+
+        console.log(employee.id)
+
+
+
+        // 3.Functions
+
+        //Function - To do a Task
+        //Keyword - function
+        //Sumbol - ()
+
+        //Task : Build BillCalculator
+
+        function BillCalculator() {
+
+            //Body of a Function - Instruction 
+
+            var product1 = "Milk"
+            var product2 = "Bread"
+
+            var price1 = 100
+            var price2 = 50
+
+            var TotalBill = price1 + price2;
+
+            console.log("The Price of Total Bill is ", TotalBill)
+        }
+
+        BillCalculator() //Calling Function
+    </script>
+</body>
+
+</html>
