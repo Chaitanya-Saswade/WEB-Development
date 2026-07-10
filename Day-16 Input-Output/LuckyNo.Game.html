@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        //Break statement is Used to End the Loop At That Condition.
+
+        //GAME - Draw a Dice and Get a Lucky Number
+
+        let LuckyNo = Math.floor(Math.random() * 6) + 1
+
+        //Here Math.Random() Selects any Random Number which is in Decimal Form ex. 0.323 , 2.543 , 5.1121 , 7.128
+        // Math.floor() Rounds-off the Value 
+        // *6 is the Limit of LuckyNo
+        // +1 means if adding 1 in LuckyNo.
+
+        while (true) {
+            var guess = prompt("Guess a Number Between 1 to 6")
+
+            if (LuckyNo == guess) {
+                alert("You Won 🎉👍")
+                break;
+            } else {
+                alert("You Lost, Try Again.😯")
+            }
+        }
+    </script>
+
+</body>
+
+</html>
