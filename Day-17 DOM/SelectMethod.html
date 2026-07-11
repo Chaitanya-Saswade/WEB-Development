@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- DOM - Document Object Model -->
+
+    <!-- It is Responsible to Connect HTML(TAGS) and JavaScript(Logic).
+
+    It is a Tree Structure of HTML Document. It is a Collection of Nodes.
+    It is an Object Oriented Representation of Web Page. -->
+
+
+
+    <p id="myp">This is a Paragraph.</p>
+
+    <div class="abc">This is Div-0</div>
+    <div class="abc">This is Div-1</div>
+
+    <p>This is Paragraph Tag-0</p>
+    <p>This is Paragraph Tag-1</p>
+
+    <div class="box">HTML</div>
+    <div class="box">JAVASCRIPT</div>
+
+
+
+    <script>
+        //Select Element/Tag for HTML
+
+        // 1. getElementById("Value of ID")                   Id
+        // documnet - Webpage in JS
+        // .textcontent - Content of Tag
+
+        const ele = document.getElementById("myp")
+        console.log(ele)
+        console.log(ele.textContent)
+
+        //If the Id is used only in one tag then -  getElementById("Value of ID")
+        //If the Id is used in multiple tag then -  getElementsById("Value of ID")
+
+        //If Elements are multiple then the Output will be Shown in Array cause Multiple Data/Tags was Stored in Class.
+        // TextContent for Multiple Tags - console.log(ClassName[IndexNo.].textContent)
+
+
+        // 2.getElementByClassName("Class Name")
+
+        const cs = document.getElementsByClassName("abc")
+        console.log(cs)
+        console.log(cs[1].textContent)
+
+
+        // 3. TagName("Value")
+        const xyz = document.getElementsByTagName("p")
+        console.log(xyz)
+
+
+        // 4. QuerySelector
+        // It only selects First Element - 1 Tag
+
+        const upp = document.querySelector(".box")
+        console.log(upp)
+
+
+        // 5. QuerySelectorAll
+        // Selects All Elements/Tags
+
+        const trt = document.querySelectorAll(".box")
+        console.log(trt)
+    </script>
+</body>
+
+</html>

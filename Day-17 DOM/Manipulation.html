@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="uii">Good Morning!</p>
+    <button id="btn">Log In</button>
+
+
+    <div id="oo">This is Div.</div>
+
+
+    <p id="fgg">This is Old Para</p>
+
+    <script>
+        // 1. To Updatee Text Content without HTML. 
+        const ele = document.getElementById("uii")
+        ele.textContent = "Hello, Have Good Day!"
+
+        const ele2 = document.getElementById("btn")
+        ele2.textContent = "Log Out"
+
+
+        // 2. Replacing the Tag/element without HTML. 
+
+        // innerHTML - Help us To Update Tag or Change The Content of Tag
+
+        const ele3 = document.getElementById("oo")
+
+        // ele3.innerHTML = "<h2> NAMASKAR </h2>"      for changing one tag only
+
+        ele3.innerHTML = `                             
+        <h3>Hello, My Name Is Chaitanya.</h3>
+        <em>Today is a Sunny Day!</em>
+        <p>Whatever Happens, ~Happens</p>
+        `
+
+
+        // 3. Adding Style/CSS  without HTML/CSS.
+
+        const ele4 = document.getElementById("fgg")
+
+        ele4.style.color = "Yellow"
+        ele4.style.backgroundColor = "Black"
+        ele4.textContent = "This is New Para"
+    </script>
+</body>
+
+
+</html>
