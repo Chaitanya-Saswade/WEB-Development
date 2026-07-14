@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .whole {
+            background-color: black;
+            color: white;
+            text-align: center;
+        }
+        
+        button {
+            margin: 20px;
+            padding: 20px;
+            background-color: lightpink;
+            font-weight: bolder;
+        }
+    </style>
+
+</head>
+
+
+<body>
+
+    <div class="whole">
+        <h1>Rock Paper Scissor</h1>
+
+        <div class="choices">
+            <button class="rock" onclick="playGame('rock')">Rock</button>
+            <button class="paper" onclick="playGame('paper')">Paper</button>
+            <button class="scissor" onclick="playGame('scissor')">Scissor</button>
+        </div>
+
+        <p id="result">Choose an option to play Game</p>
+
+        <div class="scoreboard">
+            <p><strong>ScoreBoard</strong></p>
+            <p>Wins <span id="Win">0</span></p>
+            <p>Loose <span id="Loose">0</span></p>
+            <p> Draw <span id="Draw">0</span></p>
+        </div>
+    </div>
+
+
+    <script>
+        let wins = 0
+        let looses = 0
+        let draws = 0
+
+        function playGame(userChoice) {
+
+            const choice = ["rock", "paper", "scissor"]
+
+            const computerChoice = choice[Math.floor(Math.random() * 3)]
+
+            let resultMessage = ""
+
+            //Logic
+
+            if (userChoice === computerChoice) {
+                resultMessage = "Draw!, You Selected the Same Choice. Both Choosed " + userChoice
+                draws++
+            } else if (
+                (userChoice === "rock" && computerChoice === "scissor") ||
+                (userChoice === "paper" && computerChoice === "rock") ||
+                (userChoice === "scissor" && computerChoice === "paper")
+            ) {
+                resultMessage =
+                    "You Won " + userChoice + " Beats " + computerChoice
+                wins++
+            } else {
+                resultMessage =
+                    "You Lost " + computerChoice + " Beats " + userChoice
+                looses++
+            }
+
+            //DOM
+
+            const ele = document.getElementById('result')
+            ele.style.color = "Green "
+            document.getElementById('result').innerHTML = resultMessage
+            document.getElementById('wins').innerHTML = wins
+            document.getElementById('looses').innerHTML = looses
+            document.getElementById('draws').innerHTML = draws
+        }
+    </script>
+
+</body>
+
+</html>
