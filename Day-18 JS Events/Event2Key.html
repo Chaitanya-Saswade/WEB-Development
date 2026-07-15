@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #myDiv {
+            margin-top: 15px;
+            height: 200px;
+            width: 200px;
+            background-color: lightblue;
+            overflow: auto;
+            /* overflow: auto; - It will give a Scroll bar */
+        }
+        
+        .content {
+            height: 400px;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>WelCome to Event!</h2>
+
+    <input id="myInput" placeholder="Type your Response...">
+
+    <div id="myDiv">
+        <div class="content"> Scroll Inside Me</div>
+    </div>
+
+    <script>
+        // .key is used to store a input character
+        // .value is used to store input value
+        // .target - tells you which HTML element did the event.
+
+
+        // Step-1- Selecting the Element/Tag
+
+        const input = document.getElementById("myInput")
+
+        const Div = document.getElementById("myDiv")
+
+
+        // Step-2- Capture the Event./Action
+
+
+        //1. keyup - When key is released you get Output
+
+        // input.addEventListener("keyup", function(e) {
+        // console.log("Key Released - " + e.key)            
+        // })
+
+        //2. keydown - When key is Pressed you get Output
+
+        // input.addEventListener("keydown", function(x) {
+        //     console.log("Key Pressed - " + x.key)
+        // })
+
+
+        //3. Change - Change Happening in the Input
+
+        // input.addEventListener("change", function(y) {
+        //     console.log("Value of Input - " + y.target.value)
+        // })
+
+
+        // 4. MouseOver - Moving mouse on Something
+
+        Div.addEventListener("mouseover", function() {
+            Div.style.backgroundColor = "blue"
+        })
+
+        // 5. MouseOut - Moving mouse Out from Something
+
+        Div.addEventListener("mouseout", function() {
+            Div.style.backgroundColor = "Red"
+        })
+    </script>
+</body>
+
+</html>

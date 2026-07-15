@@ -28,11 +28,13 @@
 
     <div class="whole">
         <h1>Rock Paper Scissor</h1>
+        <!-- onclick = "Runs JavaScript when this element is clicked." -->
 
         <div class="choices">
             <button class="rock" onclick="playGame('rock')">Rock</button>
             <button class="paper" onclick="playGame('paper')">Paper</button>
             <button class="scissor" onclick="playGame('scissor')">Scissor</button>
+            <!-- when rock/paper/scissor is clicked it is selected -->
         </div>
 
         <p id="result">Choose an option to play Game</p>
@@ -81,11 +83,11 @@
             //DOM
 
             const ele = document.getElementById('result')
-            ele.style.color = "Green "
-            document.getElementById('result').innerHTML = resultMessage
-            document.getElementById('wins').innerHTML = wins
-            document.getElementById('looses').innerHTML = looses
-            document.getElementById('draws').innerHTML = draws
+            ele.style.color = "Green"
+            document.getElementById("result").innerHTML = resultMessage
+            document.getElementById("wins").innerHTML = wins
+            document.getElementById("looses").innerHTML = looses
+            document.getElementById("draws").innerHTML = draws
         }
     </script>
 
