@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            text-align: center;
+            font-family: cursive;
+            background-color: lightskyblue;
+        }
+        
+        .piano {
+            height: 360px;
+            display: flex;
+            justify-content: center;
+            margin-top: 50px;
+            background-color: white;
+        }
+        
+        .key {
+            border: 2px solid black;
+            height: 85%;
+            width: 90px;
+            margin: 1%;
+            background-color: black;
+            color: white;
+            cursor: pointer;
+            box-shadow: 0 0 2px black;
+            transition: background-color 0.3s;
+        }
+        
+        .key:active {
+            background-color: #ddd;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Piano - Event</h1>
+    <!-- data-note="" --  Adds Value to the Data -->
+
+    <div class="piano">
+        <div class="key" data-note="C">C</div>
+        <div class="key" data-note="D">D</div>
+        <div class="key" data-note="E">E</div>
+        <div class="key" data-note="F">F</div>
+        <div class="key" data-note="G">G</div>
+        <div class="key" data-note="A">A</div>
+        <div class="key" data-note="B">B</div>
+    </div>
+
+    <audio id="audio-C" src="./big_knight-big-knight-melodic-pad-406848.mp3"></audio>
+    <audio id="audio-D " src="./freesound_community-037384_f-distorted-bass-note-guitar-string-77384.mp3"></audio>
+    <audio id="audio-E " src="./freesound_community-bass-slide-39561.mp3"></audio>
+    <audio id="audio-F " src="./soundsgoodmusic-guitar-note-375696.mp3"></audio>
+    <audio id="audio-G " src="./freesound_community-guitar-notes-64986.mp3"></audio>
+    <audio id="audio-A " src="./sadekhusein-pop-up-209378.mp3"></audio>
+    <audio id="audio-B " src="./freesound_community-bass-slide-39561.mp3"></audio>
+
+
+    <script>
+        // audio - data-note value
+
+        const keys = document.querySelectorAll(".key")
+        console.log(keys)
+
+        //Keys will be an array because it is storing Multiple Div Containsers
+
+        keys.forEach(function(e) {
+            const note = e.getAttribute("data-note")
+
+            const audio = document.getElementById("audio-" + note)
+
+            e.addEventListener("click", function() {
+                audio.currentTime = 0;
+                audio.play()
+            })
+
+            //Mouse
+
+            e.addEventListener("mouseover", function() {
+                e.style.backgroundColor = "beige"
+            })
+
+            e.addEventListener("mouseout", function() {
+                e.style.backgroundColor = "black"
+            })
+
+        })
+    </script>
+
+</body>
+
+</html>
