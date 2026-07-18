@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Synchronous Programming cannot handle mutiple tasks at same Time. -->
+
+    <!-- Asynchronous Programming can handle mutiple tasks at same Time. -->
+    <!-- Asynchronous Methods --- 1.Call-Back     2.Promises     3.Async and Await -->
+
+
+    <script>
+        // Example of Synchronous Programming
+
+        //Task 1 -Sandwich (10 sec)
+
+        function Sandwich() {
+            console.log("Step-1: Get a Bread ")
+            console.log("Step-2: Get a Butter ")
+            console.log("Step-3: Apply Butter ")
+            console.log("Step-4: Roast It ")
+        }
+        Sandwich();
+
+        //Task 2 - Do Homework (2 sec)
+
+        function DoHomeWork() {
+            console.log("Step-1: Complete Homework.")
+        }
+        DoHomeWork();
+    </script>
+</body>
+
+</html>
