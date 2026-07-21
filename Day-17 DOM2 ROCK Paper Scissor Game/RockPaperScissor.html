@@ -7,10 +7,15 @@
     <title>Document</title>
 
     <style>
+        .scoreboard {
+            border: 9px solid lightsteelblue;
+        }
+        
         .whole {
-            background-color: black;
-            color: white;
+            background-color: beige;
+            font-weight: bolder;
             text-align: center;
+            border: 10px solid lightsteelblue;
         }
         
         button {
@@ -24,7 +29,7 @@
 </head>
 
 
-<body>
+<body style="background-color: black;">
 
     <div class="whole">
         <h1>Rock Paper Scissor</h1>
@@ -41,9 +46,9 @@
 
         <div class="scoreboard">
             <p><strong>ScoreBoard</strong></p>
-            <p>Wins <span id="Win">0</span></p>
-            <p>Loose <span id="Loose">0</span></p>
-            <p> Draw <span id="Draw">0</span></p>
+            <p>Wins <span id="wins">0</span></p>
+            <p>Loose <span id="looses">0</span></p>
+            <p> Draw <span id="draws">0</span></p>
         </div>
     </div>
 
