@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // CallBack - Used to Achieve Asynchronous Programming
+
+        // CallBack - CallBack is a Function and CallBack is Passed as a Parameter into Another Function
+
+        function DoHomework(subject, callback) {
+
+            console.log(` Doing Homework ${subject} `)
+
+            callback()
+                // Calling the CallBack Function.
+
+        }
+
+        DoHomework("Web Development", function() {
+            console.log("Homewrok Done Now Going to Play")
+        })
+
+
+        // But After Using Multiple CallBack Functions it becomes too Messy andit Creates "CALLBACK HELL"
+        // CallBack Hell problem is Solved by "Promises" Concept.
+    </script>
+
+</body>
+
+</html>
