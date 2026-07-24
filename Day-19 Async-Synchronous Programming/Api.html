@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // JSON - JavaScript Object Notation
+
+        // Random API Link -
+        // https: //randomuser.me/api 
+
+
+        //     Think of an API(Application Programming Interface) as a waiter in a restaurant.
+
+        // You(the customer) tell the waiter(API) what food you want.
+        // The waiter takes your order to the kitchen(server) and brings the food(data / response) back to you.
+
+        // In one line: An API is a middleman that lets two applications communicate without talking to each other directly.
+
+
+
+
+        // fetch("API ADDRESS") fetch the Data from API
+        // Rule: Convert the Response into JSON Format Data
+
+
+        fetch("https://randomuser.me/api")
+
+        // Successfull
+        .then(response => response.json())
+
+        .then(data => console.log(data))
+            //.then(data => console.log(data.results))     if  we want only results in output
+            //.then(data => console.log(data.info))        if  we want only info in output
+
+        //Error
+        .catch(error => console.log("Error Connection", error))
+
+
+        //If the logic of the Function is Short(In One Line) then we can skip the Brackets {}
+    </script>
+</body>
+
+</html>
