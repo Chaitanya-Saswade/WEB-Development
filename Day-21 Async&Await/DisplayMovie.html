@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .movie {
+            border: 2px solid black;
+            border-radius: 12px;
+            max-width: 500px;
+            margin: auto;
+            padding: 10px;
+            background-color: bisque;
+        }
+        
+        .movie-hover {
+            transform: scale(1.0);
+            box-shadow: 2px 4px 8px red;
+            transition: 1.5s;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Movie Details</h1>
+
+    <input id="movieInput" type="text" placeholder="Enter a Movie">
+
+    <button onclick="HandleSearch()">Search Movie</button>
+
+    <div class="movie" id="movieContainer">
+
+    </div>
+
+
+
+    <script>
+        async function getMovie(movieName) {
+
+            let url = `http://www.omdbapi.com/?t=${movieName}&apikey=fee02d16`
+
+            // TRY is used to get data and CATCH is used to catch the Error.
+            try {
+
+                let response = await fetch(url)
+                let data = await response.json()
+
+                console.log(data)
+
+                if (data.Response == "True") {
+                    // Showing Output on the Page
+                    const movieContainer = document.getElementById("movieContainer")
+                    movieContainer.innerHTML = `
+                    <img src= "${data.Poster}" style= "object-fit: cover; height: 500px">
+                    <h2>Title: ${data.Title}</h2>
+                    <p>Year: ${data.Year}</p>
+                    <p>Plot: ${data.Plot}</p>
+                    `
+
+                    movieContainer.style.textAlign = "center"
+
+                } else {
+                    alert("Movie Not Found.")
+                }
+
+            } catch (error) {
+                console.log("Error Found,Please Wait.....", error)
+            }
+        }
+
+
+        function HandleSearch() {
+            const movieName = document.getElementById("movieInput").value
+
+            if (movieName) {
+                getMovie(movieName)
+            }
+        }
+        // If wrong Movie Enetered will not be showed.
+    </script>
+
+</body>
+
+</html>
