@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        //Local Storage - Data is not deleted itself acts as Permanent Storage.
+
+        // 1. local.Storage.setItem(key,value)
+
+        localStorage.setItem("AmazonCart", ["Shoe", "Laptop", "Pendrive", "Iphone", "Pen", "Camera", "Books"])
+
+        // 2. To remove Data
+        // localStorage.removeItem("AmazonCart")
+
+        // 3. To get Data
+        const Info = localStorage.getItem("AmazonCart")
+        console.log(Info)
+    </script>
+</body>
+
+</html>
