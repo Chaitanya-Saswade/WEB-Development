@@ -1,1 +1,7 @@
 >Personal Expense Tracker using HTML,CSS    (Submit Project file and Github Link in Comment Section)
+
+> Minor Project 1 (on Javascript)
+	-Smart Task Manager     by using DOM Concepts and Fundamental without API.
+
+> Minor Project 2
+	-Wheather App using Wheather API (OpenWheather API [Free])
