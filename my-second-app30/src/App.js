@@ -14,8 +14,15 @@ function App(){
          </p>
 
         <ProductC />
+
         <ProductC />
+
         <ProductC />
+
+        <ProductC />
+
+        <ProductC />
+        
         
     </div>
   )
