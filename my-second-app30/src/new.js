@@ -1,7 +1,9 @@
 import React from "react";
 
 function New() {
-    return ()
+    return (
+        <h3>Hello Friends</h3>
+    )
 }
 
 export default New
