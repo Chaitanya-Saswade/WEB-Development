@@ -1,0 +1,7 @@
+.product {
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px black;
+    width: 250px;
+    padding: 10px;
+}
