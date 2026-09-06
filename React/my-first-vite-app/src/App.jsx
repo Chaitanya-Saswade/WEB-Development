@@ -66,25 +66,68 @@
 // const [variableName , setVariableName ] = useState( initial Value )
 
 
-import { useState } from "react";
+// import { useState } from "react";
+
+// function App() {
+
+//   const[likes , setLikes] = useState(0)
+
+//   function increaseLikes() {
+//     setLikes(likes + 1)
+//     console.log(likes)
+
+//   }
+
+//   return(
+//     <div>
+// <h2>Likes: {likes}</h2>
+// <button onClick={increaseLikes}>Like💕</button>
+//     </div>
+//   ) 
+// }
+
+// export default App;
+
+
+
+
+
+// Example 3    Another Example of useState  for Password Show and Hide
+
+// import { useState } from "react";
+
+// function App() {
+
+//   const [show , setShow] = useState(false)
+
+//   return(
+//     <div>
+//       <input  type= { show ?  "type" : "password" }    placeholder="Enter Your Password"   />
+//       <button onClick= { ()=> setShow(!show) } >Show/Hide</button>
+//         {/* If value !show is updating we have store it somewhere i.e setShow */}
+//     </div>
+//   ) 
+// }
+
+// export default App;
+
+
+
+
+
+// Example 4    Another Example of useState  for Ins
+
+import {useState} from "react";
 
 function App() {
 
-  const[likes , setLikes] = useState(0)
+    const [follow , setFollow] = useState(false)
 
-  function increaseLikes() {
-    setLikes(likes + 1)
-    console.log(likes)
-
-  }
-
-  return(
-    <div>
-<h2>Likes: {likes}</h2>
-<button onClick={increaseLikes}>Like💕</button>
-    </div>
-  ) 
+    return(
+        <div>
+            <button onClick={ ()=> setFollow(!follow) }> {follow ? "Following" : "Follow" }</button>
+        </div>
+    )
 }
 
 export default App;
-
